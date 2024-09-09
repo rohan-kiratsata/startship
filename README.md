@@ -15,5 +15,6 @@ An open source boilerplate / starter kit for startup.
 - Styling: [Tailwind CSS](https://tailwindcss.com)
 - Types Safety: [Typescript](https://typescriptlang.org)
 - Emails: [Resend](https://resend.com)
+- Database: [Supabase](https://supabase.com)
 
 (more coming soon)
