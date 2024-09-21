@@ -1,15 +1,24 @@
 {
-  "name": "alpha.dev",
-  "version": "0.1.0-alpha",
+  "name": "v1.alpha",
+  "version": "0.0.1",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "shared/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "typescript": "^5.5.4"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  }
+    "eslint": "^8.0.0",
+    "prettier": "^2.7.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "npm@8.19.2"
 }

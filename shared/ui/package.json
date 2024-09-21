@@ -4,7 +4,9 @@
   "description": "",
   "main": "postcss.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "npm run build -- --watch",
+    "lint": "eslint \"src/**/*.ts*\""
   },
   "keywords": [],
   "author": "",
